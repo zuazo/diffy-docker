@@ -1,5 +1,5 @@
 # Diffy Docker Container
-[![Source Code](https://img.shields.io/badge/source-GitHub-blue.svg?style=flat)](https://github.com/zuazo/diffy-docker) [![Docker Repository on Quay.io](https://quay.io/repository/zuazo/diffy/status "Docker Repository on Quay.io")](https://quay.io/repository/zuazo/diffy) [![Build Status](http://img.shields.io/travis/zuazo/diffy-docker.svg?style=flat)](https://travis-ci.org/zuazo/diffy-docker)
+[![Source Code](https://img.shields.io/badge/source-GitHub-blue.svg?style=flat)](https://github.com/zuazo/diffy-docker) [![Docker Repository on Quay.io](https://quay.io/repository/zuazo/diffy/status "Docker Repository on Quay.io")](https://quay.io/repository/zuazo/diffy)
 
 A [Docker](https://www.docker.com/) image with [Diffy](https://github.com/twitter/diffy).
 
