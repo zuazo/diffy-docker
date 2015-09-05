@@ -39,7 +39,7 @@ For example:
 
 You need to replace the *Candidate*, the *Primary Master* and the *Secondary Master* values by your own API addresses.
 
-You can now open [http://127.0.0.1:31149/](http://127.0.0.1:31149/) to see the web interface and use the `31900` port to make the API requests:
+You can now open `http://localhost:31149` to see the web interface and use the `31900` port to make the API requests:
 
     $ curl localhost:31900/your_application_route
 
