@@ -18,6 +18,7 @@ RUN apt-get update && \
 RUN cd /usr/local/src && \
     git clone https://github.com/twitter/diffy.git && \
     cd diffy && \
+    rm -rf .git && \
     ./sbt assembly && \
     mv target/scala-2.11 /opt/diffy && \
     rm -r /usr/local/src/diffy
