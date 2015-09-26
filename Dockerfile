@@ -21,7 +21,12 @@ RUN cd /usr/local/src && \
     rm -rf .git && \
     ./sbt assembly && \
     mv target/scala-2.11 /opt/diffy && \
+    groupadd -r diffy && \
+    useradd -r -g diffy -d /opt/diffy diffy && \
+    chown -R diffy:diffy /opt/diffy && \
     rm -r /usr/local/src/diffy
+
+USER diffy
 
 WORKDIR /opt/diffy
 
