@@ -55,6 +55,10 @@ module DockerContext
     dockerfile_location.nil? ? root : File.join(root, dockerfile_location)
   end
 
+  def travis_ci?
+    ENV['TRAVIS_CI'] == 'true'
+  end
+
   # Returns the Docker::Image instance built from the Dockerfile.
   def image
     logger = DockerLogger.new
@@ -65,7 +69,7 @@ module DockerContext
 
   # Removes the temporary docker image used to run the tests.
   def cleanup_image
-    return if @image.nil?
+    return if @image.nil? || travis_ci?
     @image.remove(force: true)
     @image = nil
   end
